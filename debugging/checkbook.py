@@ -1,14 +1,14 @@
 class Checkbook:
     """
-    A simple checkbook class to simulate a checking account with basic operations.
-    
+    A simple checkbook simulate a checking account with operations.
+
     Attributes:
     - balance (float): The current balance of the account. Initially set to 0.0.
-    
+
     Methods:
-    - deposit(amount): Deposits the given amount into the account and prints the updated balance.
-    - withdraw(amount): Withdraws the given amount from the account if sufficient funds are available. 
-                         Prints an error message if there are insufficient funds.
+    - deposit(amount): Deposits amount into the account and prints the updated balance.
+    - withdraw(amount): Withdraws amount from the account if sufficient funds are available. 
+    Prints an error message if there are insufficient funds.
     - get_balance(): Displays the current balance of the account.
     """
 
@@ -21,7 +21,6 @@ class Checkbook:
     def deposit(self, amount):
         """
         Deposits the given amount into the checkbook.
-        
         Args:
         - amount (float): The amount to deposit into the checkbook.
         """
@@ -33,7 +32,6 @@ class Checkbook:
         """
         Withdraws the given amount from the checkbook if sufficient funds are available.
         If there are insufficient funds, an error message is printed.
-        
         Args:
         - amount (float): The amount to withdraw from the checkbook.
         """
@@ -43,7 +41,6 @@ class Checkbook:
             self.balance -= amount
             print("Withdrew ${:.2f}".format(amount))
             print("Current Balance: ${:.2f}".format(self.balance))
-
     def get_balance(self):
         """
         Displays the current balance in the checkbook.
@@ -54,7 +51,6 @@ class Checkbook:
 def main():
     """
     Main function that runs a simple interactive checkbook program.
-    
     The user can perform the following actions:
     - Deposit money into the account
     - Withdraw money from the account
