@@ -4,10 +4,11 @@ def print_board(board):
         print(" | ".join(row))
         print("-" * 5)
 
+
 def check_winner(board):
     """
     Checks if there is a winner on the board.
-    
+
     Returns True if a player has won, False otherwise.
     """
     # Check rows
@@ -17,7 +18,8 @@ def check_winner(board):
 
     # Check columns
     for col in range(len(board[0])):
-        if board[0][col] == board[1][col] == board[2][col] and board[0][col] != " ":
+        if board[0][col] == board[1][col] == board[2][col]
+           and board[0][col] != " ":
             return True
 
     # Check diagonals
